@@ -14,7 +14,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "types": ["./types.ts"],
+      "utils": ["./utils"]
+    }
   },
-  "include": ["./packages"]
+  "include": ["__test__", "types.ts", "index.ts", "utils", "global.d.ts"]
 }
